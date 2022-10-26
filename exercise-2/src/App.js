@@ -14,6 +14,8 @@ function App() {
                     <Route path="/" element={<Navigate replace to="/welcome" />} />
                     {/* //' without replace keyword we would be pushing the new page. */}
                     <Route path="/welcome/*" element={<Welcome />} />
+                     {/* <Route path="new-user" element={ <p>Welcome, new user!</p>}/>
+                    </Route> //# wen can also just put the nested route directly under thee parent route and add <Outlet/> in the place where it used to be*/}
                     <Route path="/products"  element={<Products />} />
                     <Route
                         path="/products/:productId"
