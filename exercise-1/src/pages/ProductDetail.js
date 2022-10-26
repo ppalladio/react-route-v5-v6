@@ -5,7 +5,7 @@ const ProductDetail = () => {
 
   console.log(params.productId);
 
-  return (
+  return ( 
     <section>
       <h1>Product Detail</h1>
       <p>{params.productId}</p>
