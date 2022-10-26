@@ -8,13 +8,12 @@ const MainHeader = () => {
       <nav>
         <ul>
           <li>
-            <NavLink className={(navData)=>{return navData.isActive ?classes.active:''}} to='/welcome'>
-              {/* //' with v6 avtiveClassName is removed , need to pass a function in classes to decide wha to do when the link is active' [old: activeClassName={classes.active}] */}
+            <NavLink activeClassName={classes.active} to='/welcome'>
               Welcome
             </NavLink>
           </li>
           <li>
-            <NavLink className={(navData)=>{return navData.isActive ?classes.active:''}} to='/products'>
+            <NavLink activeClassName={classes.active} to='/products'>
               Products
             </NavLink>
           </li>
